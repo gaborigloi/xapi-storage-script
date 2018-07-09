@@ -21,7 +21,7 @@ open Async
 open Xapi_storage_script_types
 
 module Plugin_client = Xapi_storage.Plugin.Plugin(Rpc_async.GenClient ())
-module Volume_client = Xapi_storage.Control.Volume(Rpc_async.GenClient ())
+module Volume_client = Xapi_storage.Control.VolumeInterface(Rpc_async.GenClient ())
 module Sr_client = Xapi_storage.Control.Sr(Rpc_async.GenClient ())
 module Datapath_client = Xapi_storage.Data.Datapath(Rpc_async.GenClient ())
 
